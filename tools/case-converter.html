@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Converter | ToolHarian</title>
+  <meta name="description" content="Ubah teks jadi uppercase, lowercase, dan title case.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header><div class="container nav"><a class="brand" href="../index.html">ToolHarian</a><nav class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy</a><a href="../terms.html">Terms</a></nav></div></header>
+<main class="container"><section><div class="card"><h1>Case Converter</h1><p class="small">Ubah format huruf teks secara cepat untuk kebutuhan copywriting, caption, atau formatting.</p><label for="text">Masukkan teks</label><textarea id="text"></textarea><div class="actions"><button class="button secondary" onclick="setCase('upper')">UPPERCASE</button><button class="button secondary" onclick="setCase('lower')">lowercase</button><button class="button secondary" onclick="setCase('title')">Title Case</button></div><label for="output">Hasil</label><textarea id="output"></textarea></div></section><section><div class="card"><h2>Tool terkait</h2><div class="grid"><div class="card"><h3>Word Counter</h3><a href="word-counter.html">Buka →</a></div><div class="card"><h3>Text Repeater</h3><a href="text-repeater.html">Buka →</a></div></div></div></section></main><footer><div class="container"><p>© 2026 ToolHarian. Tools online gratis buat kebutuhan harian.</p></div></footer><script>function setCase(mode){const t=document.getElementById('text').value;let o=t;if(mode==='upper')o=t.toUpperCase();if(mode==='lower')o=t.toLowerCase();if(mode==='title')o=t.toLowerCase().replace(/\b\w/g,m=>m.toUpperCase());document.getElementById('output').value=o;}</script>
+</body>
+</html>

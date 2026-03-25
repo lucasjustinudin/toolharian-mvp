@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator | ToolHarian</title>
+  <meta name="description" content="Hitung umur dari tanggal lahir secara cepat.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header><div class="container nav"><a class="brand" href="../index.html">ToolHarian</a><nav class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy</a><a href="../terms.html">Terms</a></nav></div></header>
+<main class="container"><section><div class="card"><h1>Age Calculator</h1><p class="small">Hitung umur berdasarkan tanggal lahir tanpa buka kalkulator manual kayak hidup masih 2009.</p><label>Tanggal lahir</label><input id="birth" type="date"><div class="actions"><button class="button" onclick="calcAge()">Hitung Umur</button></div><div class="result" id="result">Masukkan tanggal lahir dulu.</div></div></section><section><div class="card"><h2>Tool terkait</h2><div class="grid"><div class="card"><h3>Days Between Dates</h3><a href="days-between-dates.html">Buka →</a></div><div class="card"><h3>Random Number Generator</h3><a href="random-number-generator.html">Buka →</a></div></div></div></section></main><footer><div class="container"><p>© 2026 ToolHarian. Tools online gratis buat kebutuhan harian.</p></div></footer><script>function calcAge(){const v=document.getElementById('birth').value;if(!v)return;const b=new Date(v);const n=new Date();let age=n.getFullYear()-b.getFullYear();const m=n.getMonth()-b.getMonth();if(m<0||(m===0&&n.getDate()<b.getDate()))age--;document.getElementById('result').textContent='Umur saat ini: '+age+' tahun';}</script>
+</body>
+</html>

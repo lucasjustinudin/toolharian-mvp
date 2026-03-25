@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Counter | ToolHarian</title>
+  <meta name="description" content="Hitung jumlah karakter dengan atau tanpa spasi secara cepat.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header><div class="container nav"><a class="brand" href="../index.html">ToolHarian</a><nav class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy</a><a href="../terms.html">Terms</a></nav></div></header>
+<main class="container"><section><div class="card"><h1>Character Counter</h1><p class="small">Hitung jumlah karakter dengan atau tanpa spasi langsung di browser.</p><label for="text">Masukkan teks</label><textarea id="text" placeholder="Tulis atau tempel teks di sini..."></textarea><div class="stats"><div class="stat">Dengan spasi<strong id="with">0</strong></div><div class="stat">Tanpa spasi<strong id="without">0</strong></div></div></div></section><section><div class="card"><h2>Tool terkait</h2><div class="grid"><div class="card"><h3>Word Counter</h3><a href="word-counter.html">Buka →</a></div><div class="card"><h3>Case Converter</h3><a href="case-converter.html">Buka →</a></div></div></div></section></main><footer><div class="container"><p>© 2026 ToolHarian. Tools online gratis buat kebutuhan harian.</p></div></footer><script>const t=document.getElementById('text');function u(){const v=t.value;document.getElementById('with').textContent=v.length;document.getElementById('without').textContent=v.replace(/\s/g,'').length;}t.addEventListener('input',u);</script>
+</body>
+</html>

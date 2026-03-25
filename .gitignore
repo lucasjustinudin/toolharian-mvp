@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Local preview / temp
+.tmp/
+*.log
+
+# Node / package manager if added later
+node_modules/
+
+# Env files
+.env
+.env.*

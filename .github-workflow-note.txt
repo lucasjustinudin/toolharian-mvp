@@ -1,0 +1,5 @@
+Suggested GitHub Actions idea:
+- deploy to Cloudflare Pages / Netlify / Vercel after push
+- optional HTML validation / link check
+
+This file is just a note and can be deleted later.

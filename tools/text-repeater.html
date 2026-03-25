@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Repeater | ToolHarian</title>
+  <meta name="description" content="Ulang teks sesuai jumlah yang diinginkan.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header><div class="container nav"><a class="brand" href="../index.html">ToolHarian</a><nav class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy</a><a href="../terms.html">Terms</a></nav></div></header>
+<main class="container"><section><div class="card"><h1>Text Repeater</h1><p class="small">Ulang teks dengan cepat buat format posting, testing, atau kebutuhan iseng produktif.</p><label>Teks</label><input id="text" type="text" placeholder="Masukkan teks"><label>Jumlah</label><input id="count" type="number" min="1" value="5"><div class="actions"><button class="button" onclick="repeatText()">Generate</button></div><label>Hasil</label><textarea id="output"></textarea></div></section><section><div class="card"><h2>Tool terkait</h2><div class="grid"><div class="card"><h3>Case Converter</h3><a href="case-converter.html">Buka →</a></div><div class="card"><h3>Remove Duplicate Lines</h3><a href="remove-duplicate-lines.html">Buka →</a></div></div></div></section></main><footer><div class="container"><p>© 2026 ToolHarian. Tools online gratis buat kebutuhan harian.</p></div></footer><script>function repeatText(){const text=document.getElementById('text').value;const count=parseInt(document.getElementById('count').value||0,10);document.getElementById('output').value=Array.from({length:Math.max(0,count)},()=>text).join('\n');}</script>
+</body>
+</html>

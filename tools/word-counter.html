@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Counter Online Gratis | ToolHarian</title>
+  <meta name="description" content="Hitung jumlah kata, karakter, kalimat, dan paragraf secara cepat.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header><div class="container nav"><a class="brand" href="../index.html">ToolHarian</a><nav class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy</a><a href="../terms.html">Terms</a></nav></div></header>
+<main class="container"><section><div class="card"><h1>Word Counter Online Gratis</h1><p class="small">Hitung jumlah kata, karakter, kalimat, dan paragraf langsung di browser untuk artikel, caption, tugas, atau catatan kerja.</p><label for="text">Masukkan teks</label><textarea id="text" placeholder="Tempel teks di sini..."></textarea><div class="stats"><div class="stat">Kata<strong id="words">0</strong></div><div class="stat">Karakter<strong id="chars">0</strong></div><div class="stat">Kalimat<strong id="sentences">0</strong></div><div class="stat">Paragraf<strong id="paragraphs">0</strong></div></div></div></section><section><div class="card"><h2>Tool terkait</h2><div class="grid"><div class="card"><h3>Character Counter</h3><a href="character-counter.html">Buka →</a></div><div class="card"><h3>Case Converter</h3><a href="case-converter.html">Buka →</a></div></div></div></section></main><footer><div class="container"><p>© 2026 ToolHarian. Tools online gratis buat kebutuhan harian.</p></div></footer><script>const text=document.getElementById('text');function update(){const v=text.value;document.getElementById('chars').textContent=v.length;document.getElementById('words').textContent=(v.trim().match(/\S+/g)||[]).length;document.getElementById('sentences').textContent=(v.match(/[^.!?]+[.!?]+/g)||[]).length||(v.trim()?1:0);document.getElementById('paragraphs').textContent=v.trim()?v.trim().split(/\n\s*\n/).length:0;}text.addEventListener('input',update);</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Days Between Dates | ToolHarian</title>
+  <meta name="description" content="Hitung selisih hari antara dua tanggal.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header><div class="container nav"><a class="brand" href="../index.html">ToolHarian</a><nav class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy</a><a href="../terms.html">Terms</a></nav></div></header>
+<main class="container"><section><div class="card"><h1>Days Between Dates</h1><p class="small">Hitung selisih hari antara dua tanggal untuk deadline, event, atau nostalgia yang terlalu terukur.</p><label>Tanggal awal</label><input id="start" type="date"><label>Tanggal akhir</label><input id="end" type="date"><div class="actions"><button class="button" onclick="calcDays()">Hitung Selisih</button></div><div class="result" id="result">Pilih dua tanggal.</div></div></section><section><div class="card"><h2>Tool terkait</h2><div class="grid"><div class="card"><h3>Age Calculator</h3><a href="age-calculator.html">Buka →</a></div><div class="card"><h3>Random Number Generator</h3><a href="random-number-generator.html">Buka →</a></div></div></div></section></main><footer><div class="container"><p>© 2026 ToolHarian. Tools online gratis buat kebutuhan harian.</p></div></footer><script>function calcDays(){const sv=document.getElementById('start').value;const ev=document.getElementById('end').value;if(!sv||!ev)return;const s=new Date(sv);const e=new Date(ev);const diff=Math.abs(e-s)/(1000*60*60*24);document.getElementById('result').textContent='Selisih hari: '+Math.floor(diff)+' hari';}</script>
+</body>
+</html>

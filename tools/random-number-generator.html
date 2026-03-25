@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Number Generator | ToolHarian</title>
+  <meta name="description" content="Generate angka acak dari rentang tertentu.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header><div class="container nav"><a class="brand" href="../index.html">ToolHarian</a><nav class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy</a><a href="../terms.html">Terms</a></nav></div></header>
+<main class="container"><section><div class="card"><h1>Random Number Generator</h1><p class="small">Acak angka dari nilai minimum sampai maksimum secara instan.</p><label>Minimum</label><input id="min" type="number" value="1"><label>Maksimum</label><input id="max" type="number" value="100"><div class="actions"><button class="button" onclick="gen()">Generate</button></div><div class="result">Hasil: <strong id="result">-</strong></div></div></section><section><div class="card"><h2>Tool terkait</h2><div class="grid"><div class="card"><h3>Password Generator</h3><a href="password-generator.html">Buka →</a></div><div class="card"><h3>Days Between Dates</h3><a href="days-between-dates.html">Buka →</a></div></div></div></section></main><footer><div class="container"><p>© 2026 ToolHarian. Tools online gratis buat kebutuhan harian.</p></div></footer><script>function gen(){const min=parseInt(document.getElementById('min').value,10);const max=parseInt(document.getElementById('max').value,10);if(max<min){document.getElementById('result').textContent='Range tidak valid';return;}const n=Math.floor(Math.random()*(max-min+1))+min;document.getElementById('result').textContent=n;}</script>
+</body>
+</html>
