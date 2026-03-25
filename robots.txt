@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://toolharian.com/sitemap.xml
+Sitemap: https://toolharian-mvp.vercel.app/sitemap.xml
